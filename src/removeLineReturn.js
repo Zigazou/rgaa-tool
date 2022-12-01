@@ -3,5 +3,5 @@ function removeLineReturn(string) {
 
   return string.replace(/( *(\r\n|\n|\r) *)+/gm, "\n")
                .trim()
-               .replace(/(.)\n(.)/gm, "\1. \2")    
+               .replace(/(.)\n(.)/gm, "$1. $2")    
 }

@@ -7,6 +7,11 @@ const styles = `
       #eee 1em,
       #eee 2em
     );
+
+    --checker-color-1: gray;
+    --checker-color-2: lightgray;
+    --checker-size: 0.5em;
+    --checker-gradient: linear-gradient(45deg, var(--checker-color-1) 25%, transparent 25%, transparent 75%, var(--checker-color-1) 75%);
   }
 
   body { font-family: sans-serif; }
@@ -83,7 +88,19 @@ const styles = `
     background-color: transparent;
   }
 
+  .images-table { border-collapse: collapse; }
 
+  .images-table td {
+    border: 1px solid gray;
+    padding: 0.2rem 0.3rem;
+  }
+
+  .image-content>div {
+    background-color: var(--checker-color-2);
+    background-image: var(--checker-gradient), var(--checker-gradient);
+    background-position: 0 0, var(--checker-size) var(--checker-size);
+    background-size: calc(var(--checker-size) * 2) calc(var(--checker-size) * 2);
+  }
 `
 function getStyles() {
   const style = document.createElement("style")

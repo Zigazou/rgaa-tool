@@ -1,4 +1,4 @@
-functions = src/createPopup.js src/removeLineReturn.js src/getText.js src/style.css.js src/isHidden.js src/extractLinks.js src/extractHeadings.js src/main.js
+functions = src/getFigCaption.js src/createDataThumbnail.js src/extractImages.js src/createPopup.js src/removeLineReturn.js src/getText.js src/style.css.js src/isHidden.js src/extractLinks.js src/extractHeadings.js src/main.js
 
 rgaa-tool.html: rgaa-tool.template.bash rgaa-tool.bookmarklet
 	bash rgaa-tool.template.bash > rgaa-tool.html
