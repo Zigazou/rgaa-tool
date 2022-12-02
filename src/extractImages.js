@@ -1,3 +1,8 @@
+/**
+ * Extract images from the current page.
+ * 
+ * @return {DocumentFragment} - The fragment to insert into another page.
+ */
 function extractImages() {
   const elements = document.createDocumentFragment()
 

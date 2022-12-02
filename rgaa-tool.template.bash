@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# This Bash script uses a heredoc statement to create an HTML page.
+# The HTML page makes it easier to install the bookmarklet by drag and dropping
+# a big link in your favorites bar.
+#
+# Using an onclick attribute, the user cannot accidentally click on it.
+
 cat << EOF
 <!doctype html>
 <html>

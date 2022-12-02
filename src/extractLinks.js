@@ -1,3 +1,8 @@
+/**
+ * Extract links from the current page.
+ * 
+ * @return {DocumentFragment} - The fragment to insert into another page.
+ */
 function extractLinks() {
   const elements = document.createDocumentFragment()
 

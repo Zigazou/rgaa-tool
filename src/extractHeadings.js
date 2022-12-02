@@ -7,6 +7,14 @@ const levels = {
   "h6": 5
 }
 
+/**
+ * Embeds an element inside nested ul tags.
+ * 
+ * Unrecognized levels returns the element as is.
+ * 
+ * @param {String} level - "h1", "h2", "h3", "h4", "h5" or "h6". 
+ * @param {DocumentElement} element - The element to embed.
+ */
 function buryInUL(level, element) {
   if (!(level in levels)) return element
 
@@ -20,6 +28,11 @@ function buryInUL(level, element) {
   return element
 }
 
+/**
+ * Extract headings from the current page.
+ * 
+ * @return {DocumentFragment} - The fragment to insert into another page.
+ */
 function extractHeadings() {
   const elements = document.createDocumentFragment()
 
